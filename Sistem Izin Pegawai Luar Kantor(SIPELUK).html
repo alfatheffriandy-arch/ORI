@@ -608,9 +608,9 @@ function renderDashboard(){
   document.getElementById('dash-sub').textContent = now.toLocaleDateString('id-ID',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+' · Kelurahan Api-Api, Bontang Utara';
 
   if(currentRole==='admin'){
-    document.getElementById('dash-title').textContent = 'Dashboard Admin &#128737;';
+    document.getElementById('dash-title').textContent = 'Dashboard Admin 🛡️';
     document.getElementById('dash-recent-title').textContent = 'Pengajuan Terbaru (Semua Pegawai)';
-    document.getElementById('dash-action-btn').textContent = '&#9989; Lihat Approval';
+    document.getElementById('dash-action-btn').textContent = '✅ Lihat Approval';
     document.getElementById('dash-action-btn').setAttribute('onclick',"goTo('approve',null)");
     var total=izinList.length, ok=izinList.filter(function(x){return x.status==='Disetujui';}).length,
         wait=izinList.filter(function(x){return x.status==='Menunggu';}).length,
